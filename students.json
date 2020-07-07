@@ -1,0 +1,48 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Иван",
+      "surname": "Иванов",
+      "patronymic": "Иванович",
+      "phone": "89201233211",
+      "email": "ivanovVV@mail.ru",
+      "date": "12.07.2000",
+      "group": "181-111",
+      "section": "ВЕБ"
+    },
+    {
+      "id": 2,
+      "name": "Петр",
+      "surname": "Петров",
+      "patronymic": "Петрович",
+      "phone": "89203332211",
+      "email": "petrovPP@mail.ru",
+      "date": "01.03.2000",
+      "group": "181-112",
+      "section": "САПР"
+    },
+    {
+      "name": "Василий",
+      "surname": "Васильев",
+      "patronymic": "Васильевич",
+      "phone": "89104445566",
+      "email": "vasiliy111@yandex.ru",
+      "date": "15.10.2000",
+      "group": "181-113",
+      "section": "Информатика и математика",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Дмитрий",
+      "surname": "Дмитриев",
+      "patronymic": "Дмитриевич",
+      "phone": "89159998877",
+      "email": "dmtry@gmail.com",
+      "date": "22.12.2000",
+      "group": "181-114",
+      "section": "Информационная безопасность"
+    }
+  ]
+}

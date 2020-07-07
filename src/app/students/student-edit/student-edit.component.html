@@ -1,0 +1,50 @@
+<div class="container mt-2 col-4 mx-auto">
+    <form [formGroup]="studentForm">
+        <div class="form-group">
+            <label for="studentname">Имя</label>
+            <input type="text" class="form-control" formControlName="name" id="studentname">
+        </div>
+        <div class="form-group">
+            <label for="studentsurname">Фамилия</label>
+            <input type="text" class="form-control" formControlName="surname" id="studentsurname">
+        </div>
+        <div class="form-group">
+            <label for="studentpatronymic">Отчество</label>
+            <input type="text" class="form-control" formControlName="patronymic" id="studentpatronymic">
+        </div>
+        <div class="form-group">
+            <label for="studentphone">Телефон</label>
+            <input [textMask]="{mask: phoneMask, showMask: true}" type="text" class="form-control"
+                formControlName="phone" id="studentphone">
+        </div>
+        <div class="form-group">
+            <label for="studentemail">Email</label>
+            <input type="text" class="form-control" formControlName="email" id="studentemail">
+        </div>
+        <div class="form-group">
+            <label for="studentdate">Дата рождения</label>
+            <input [textMask]="{mask: dateMask, showMask: true}" type="text" class="form-control" formControlName="date"
+                id="studentdate">
+        </div>
+        <div class="form-group">
+            <label for="studentgroup">Группа</label>
+            <select class="custom-select" formControlName="group" id="studentgroup" formControlName="group">
+                <option [ngValue]="groupSection.web1">181-111</option>
+                <option [ngValue]="groupSection.cad1">181-112</option>
+                <option [ngValue]="groupSection.infMaths1">181-113</option>
+                <option [ngValue]="groupSection.is1">181-114</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="studentsection">Направление подготовки</label>
+            <select class="custom-select" formControlName="section" id="studentsection" formControlName="section">
+                <option [ngValue]="studentSection.web">ВЕБ</option>
+                <option [ngValue]="studentSection.cad">САПР</option>
+                <option [ngValue]="studentSection.infMaths">Информатика и математика</option>
+                <option [ngValue]="studentSection.is">Информационная безопасность</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" [disabled]="!studentForm.valid" (click)="onSave()">Сохранить</button>
+        <button class="btn btn-danger ml-3" *ngIf="id != null" (click)="onDelete()">Удалить</button>
+    </form>
+</div>
